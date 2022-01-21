@@ -1,0 +1,6 @@
+BINARY=engine
+build-login:
+	go build -buildmode=plugin -o ./build/login.so ./login/plugin
+
+build-middleware:
+	go build -buildmode=plugin -o ./build/middleware.so ./middleware/plugin
